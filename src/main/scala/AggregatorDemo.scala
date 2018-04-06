@@ -9,4 +9,8 @@ object AggregatorDemo extends App {
   val res = aCount(alicewords)
   println("res: " + res)
 
+  val wordCount = Aggregator.prepareMonoid { s: String => Map(s -> 1) }
+  val res2 = wordCount(alicewords)
+  println("res2 : " + res2)
+
 }
