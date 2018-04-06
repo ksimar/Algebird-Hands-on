@@ -1,7 +1,4 @@
 import algebra.Monoid
-//algebra.Monoid
-//algebird.Monoid
-
 
 class ListMonoid[A] extends BaseMonoid[List[A]] {
 
@@ -24,12 +21,6 @@ trait BaseMonoid[A] {
   def op(a:A, b:A): A
   def zero:A
 }
-
-/*class Demo extends Monoid[String] {
-
-//  def
-
-}*/
 
 object MonoidDemo {
 
